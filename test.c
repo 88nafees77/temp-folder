@@ -1,3 +1,4 @@
+//Nafees git
 #include<stdio.h>
 void array(int *arr,int n){
 	int j=0,k=0;
