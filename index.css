@@ -1,0 +1,75 @@
+div{
+	border:1px solid black;
+	background-color: white;
+}
+#conatiner{
+	height: auto;
+	width: 100%;
+}
+#top{
+	height: 120px;
+	width: 100%;
+
+    
+}
+#middle{
+	height: 500px;
+	width: 100%;
+
+}
+#left{
+	height: 498px;
+	width: 40%;
+	float: left;
+	
+}
+#right{
+	height: 498px;
+	width: 59.7%;
+	float: left;
+}
+#bottom{
+	height: 60px;
+	width: 100%;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin:0;
+}
+#formul{
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.formli{
+	margin-top: 5px;
+}
+.ifield{
+	height: 35px;
+	width: 150px;
+	border:1px solid #ececec;
+}
+.li{
+	display: inline;
+	float: left;
+	margin-left: 100px;
+	margin-top: 10px;
+	
+}
+#topup{
+	height: 50px;
+	width: 100%; 
+
+#topdown{
+	height: 70px;
+	width: 100%; 
+}
+li>a{
+	text-decoration: none;
+	color: #23acbe;
+	font-size: 20px;
+}
+li>a:hover{
+	color: red;
+	text-decoration: underline;
+}

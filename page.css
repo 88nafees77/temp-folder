@@ -1,0 +1,20 @@
+#container{
+	height: auto;
+	width: 100%;
+	background-color: blue;
+}
+#head{
+	height: 50px;
+	width: 100%;
+	background-color: red;
+}
+#mid{
+	height: 500px;
+	width: 100%;
+	background-color: yellow; 
+}
+#bottom{
+	height: 60px;
+	width: 100%;
+	background-color: orange;
+}

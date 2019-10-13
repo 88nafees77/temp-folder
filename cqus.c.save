@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<string.h>
+int ispalindrom(char* str){
+	int i=0,j=strlen(str)-1;
+	while(i<j){
+		if(str[i++]!=str[j--])return 0;
+	}
+	return 1;
+}
+void mirror(char *str,char* ch,char* rev){
+	int flag=0;
+	for(int i=0;i<strlen(str);i++){
+		char c=str[i];
+		for(int j=0;j<strlen(ch);j++){
+			if(c==ch[j]
+				printf("%c ",rev[j]);
+				break;
+			}
+
+		}
+	//	if(flag==0)printf("%c ",c);
+	}
+
+}
+int main(){
+	int len;
+	scanf("%d",&len);
+	char str[len];
+	scanf("%s",str);
+	char ch[]={'A','E','H','I','J','L','M','O','S','T','U','V','W','X','Y','Z','1','2','3','5','8'};
+	char rev[]={'A','3','H','I','L','J','M','O','2','T','U','V','W','X','Y','5','1','S','E','Z','8'};
+//	int pal=ispalindrom(str);
+	mirror(str,ch,rev);	
+//	printf("%d \n",pal);
+	return 0;
+}

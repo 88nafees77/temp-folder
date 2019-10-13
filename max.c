@@ -1,0 +1,34 @@
+#include<stdio.h>
+int maxfind(int* arr,int n){
+    int m=0;
+    for(int i=0;i<n;i++){
+        if(m<arr[i]){
+            m=arr[i];
+        }
+    }
+    return m;
+}
+int main(){
+    int t;
+    scanf("%d",&t);
+    while(t--){
+        int n;
+        scanf("%d",&n);
+        int arr[n];
+        for(int i=0;i<n;i++)scanf("%d",&arr[i]);
+        int max=0,sum=0;
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                int diff=arr[i]-arr[j];
+                if(diff>0){
+                   sum=sum+diff;
+               }
+                
+            }
+        }
+           int m=maxfind(arr,n);
+        printf("%d",sum); 
+        }
+        
+    }
+    

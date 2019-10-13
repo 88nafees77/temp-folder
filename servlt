@@ -1,0 +1,14 @@
+  AccountData accountData = new AccountData();
+        accountData.setName(request.getParameter("uname"));
+        accountData.setPassowrd(request.getParameter("upass"));
+        accountData.setMobile_num(request.getParameter("mobile_num"));
+        accountData.setEmail_id(request.getParameter("email_id"));
+        accountData.setGender(request.getParameter("gender"));
+        try {
+            DataStore.dataStoring(accountData);
+        } catch (SQLException exception) {
+        }
+        PrintWriter out=response.getWriter();
+        out.println("going to login page...");
+        RequestDispatcher requestDispatcher=request.getRequestDispatcher("index.html");
+        requestDispatcher.forward(request, response);
