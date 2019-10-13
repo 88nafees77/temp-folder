@@ -1,3 +1,4 @@
+//Nafees Ahmad Ansari
 #include<stdio.h>
 int maxfind(int* arr,int n){
     int m=0;
